@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 967.18 516.41">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ca1517;
+        font-family: Exotic350BT-DemiBold, 'Exotc350 DmBd BT';
+        font-size: 59.24px;
+        font-weight: 300;
+        stroke: #fff;
+        stroke-miterlimit: 10;
+        stroke-width: .5px;
+      }
+
+      .cls-2 {
+        letter-spacing: 0em;
+      }
+
+      .cls-3 {
+        fill: #008bc4;
+        font-family: DMSans18pt-Black, 'DM Sans 18pt';
+        font-size: 91.97px;
+        font-weight: 800;
+      }
+    </style>
+  </defs>
+  <text class="cls-3" transform="translate(0 429.83)"><tspan x="0" y="0">Critical Ca</tspan><tspan class="cls-2" x="481.02" y="0">r</tspan><tspan x="518.91" y="0">e Support</tspan></text>
+  <text class="cls-1" transform="translate(26.09 502.14)"><tspan x="0" y="0">AMBULANCIAS &amp; SERVICIO MEDICO</tspan></text>
+</svg>
