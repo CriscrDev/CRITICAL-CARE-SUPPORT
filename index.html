@@ -17,15 +17,25 @@
                 <img src="Assets/Graphics/ICON.png" alt="Critical Care Support Logo" class="logo">
                 <h1 class="company-name">Critical Care Support</h1>
             </div>
-            <nav class="nav">
-                <ul class="nav-list">
-                    <li><a href="#inicio">Inicio</a></li>
-                    <li><a href="#quienes-somos">Quiénes Somos</a></li>
-                    <li><a href="#membresias">Membresías</a></li>
-                    <li><a href="#contacto">Contáctanos</a></li>
-                    <li><a href="#servicios">Nuestros Servicios</a></li>
-                </ul>
-            </nav>
+
+                       <!-- Menú Desplegable -->
+                       <div class="dropdown-menu">
+                        <button class="dropdown-btn">
+                            <span>Menú</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#inicio">Inicio</a>
+                            <a href="#quienes-somos">Quiénes Somos</a>
+                            <a href="#servicios">Nuestros Servicios</a>
+                            <a href="#consulta-medica">Consulta Médica</a>
+                            <a href="#membresias">Membresías</a>
+                            <a href="#mision-vision">Misión y Visión</a>
+                            <a href="#contacto">Contáctanos</a>
+                        </div>
+                    </div>
+                </div>
+        
             <div class="mobile-menu-toggle">
                 <i class="fas fa-bars"></i>
             </div>
@@ -36,7 +46,7 @@
     <section id="inicio" class="hero">
         <div class="slideshow-container">
             <div class="mySlides fade">
-                <img src="Assets/Graphics/Ambulancia.JPG" alt="Ambulancia Critical Care Support">
+                <img src="Assets/Graphics/CSSBANER.png" alt="Ambulancia Critical Care Support">
                 <div class="slide-text">
                     <h2>Atención Médica de Emergencia</h2>
                     <p>Servicio de ambulancias avanzadas 24/7</p>
@@ -151,6 +161,96 @@
         </div>
     </section>
 
+    <!-- Servicios de Enfermería -->
+    <section id="servicios-enfermeria" class="nursing-services">
+        <div class="container">
+            <h2 class="section-title">Servicios de Enfermería</h2>
+            <p class="section-subtitle">Cuidados especializados en la comodidad de su hogar</p>
+            <div class="nursing-grid">
+                <div class="nursing-item">
+                    <i class="fas fa-heartbeat"></i>
+                    <h3>Toma de Signos Vitales</h3>
+                    <p>Monitoreo profesional de presión arterial, frecuencia cardíaca y respiratoria</p>
+                </div>
+                <div class="nursing-item">
+                    <i class="fas fa-heart"></i>
+                    <h3>Electrocardiograma</h3>
+                    <p>Evaluación cardíaca completa con equipo especializado</p>
+                </div>
+                <div class="nursing-item">
+                    <i class="fas fa-syringe"></i>
+                    <h3>Aplicación de Medicamentos</h3>
+                    <p>Administración intramuscular, intravenosa y subcutánea segura</p>
+                </div>
+                <div class="nursing-item">
+                    <i class="fas fa-band-aid"></i>
+                    <h3>Curaciones</h3>
+                    <p>Atención profesional de heridas y lesiones cutáneas</p>
+                </div>
+                <div class="nursing-item">
+                    <i class="fas fa-cut"></i>
+                    <h3>Suturas</h3>
+                    <p>Aplicación y retiro de puntos con técnica estéril</p>
+                </div>
+                <div class="nursing-item">
+                    <i class="fas fa-home"></i>
+                    <h3>Enfermería a Domicilio</h3>
+                    <p>Atención personalizada en la comodidad de su hogar</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Consulta Médica -->
+    <section id="consulta-medica" class="medical-consultation">
+        <div class="container">
+            <h2 class="section-title">Nuestro Equipo Médico</h2>
+            <p class="section-subtitle">Profesionales altamente capacitados para tu salud</p>
+            <div class="doctors-grid">
+                <div class="doctor-card" data-doctor="1">
+                    <div class="doctor-image">
+                        <img src="Assets/Graphics/Dr. Diego Parra.jpeg" alt="Dr. Diego Alejandro Parra Hernández">
+                    </div>
+                    <div class="doctor-info">
+                        <h3>Dr. Diego Alejandro Parra Hernández</h3>
+                        <p>Urgenciólogo</p>
+                        <button class="btn-doctor-info">Ver información</button>
+                    </div>
+                </div>
+                <div class="doctor-card" data-doctor="2">
+                    <div class="doctor-image">
+                        <img src="Assets/Graphics/Dr.Gabriela.jpeg" alt="Dra. Gabriela Morales Corral">
+                    </div>
+                    <div class="doctor-info">
+                        <h3>Dra. Gabriela Morales Corral</h3>
+                        <p>Urgencióloga</p>
+                        <button class="btn-doctor-info">Ver información</button>
+                    </div>
+                </div>
+                <div class="doctor-card" data-doctor="3">
+                    <div class="doctor-image">
+                        <img src="Assets/Graphics/Dr.Viky.jpeg" alt="Dra. Carmen Martínez Martínez">
+                    </div>
+                    <div class="doctor-info">
+                        <h3>Dra. Carmen Martínez Martínez</h3>
+                        <p>Medicina Crítica</p>
+                        <button class="btn-doctor-info">Ver información</button>
+                    </div>
+                </div>
+                <div class="doctor-card" data-doctor="4">
+                    <div class="doctor-image">
+                        <img src="Assets/Graphics/Dr.Carmen.jpeg" alt="Dra. Victoria Adriana Díaz Juárez">
+                    </div>
+                    <div class="doctor-info">
+                        <h3>Dra. Victoria Adriana Díaz Juárez</h3>
+                        <p>Medicina Crítica</p>
+                        <button class="btn-doctor-info">Ver información</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Membresías -->
     <section id="membresias" class="memberships">
         <div class="container">
@@ -158,8 +258,8 @@
             <div class="memberships-grid">
                 <div class="membership-card protection-vial">
                     <div class="membership-content">
-                        <h3>Protección Vial</h3>
-                        <p>Cobertura completa en accidentes viales con respuesta inmediata</p>
+                        <h3>Proteccion Individual</h3>
+                        <p>Cobertura para una sola Persona</p>
                         <ul>
                             <li>Respuesta en menos de 15 minutos</li>
                             <li>Traslado a hospital de elección</li>
@@ -191,6 +291,49 @@
                         </ul>
                         <a href="#contacto" class="btn btn-outline">Más Información</a>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Misión, Visión y Valores -->
+    <section id="mision-vision" class="mission-vision">
+        <div class="container">
+            <h2 class="section-title">Misión, Visión y Valores</h2>
+            <div class="mission-content">
+                <div class="mission-item">
+                    <div class="mission-icon">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h3>Misión</h3>
+                    <p>Prestar servicio de salud con atención prehospitalaria con calidad y calidez, de forma permanente, buscando el bienestar de todos nuestros pacientes.</p>
+                </div>
+                <div class="mission-item">
+                    <div class="mission-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3>Visión</h3>
+                    <p>Ser la mejor empresa de atención prehospitalaria con rentabilidad social y conformados por un equipo multidisciplinario comprometido con el crecimiento empresarial y comprometidos con el bienestar de las y los pacientes.</p>
+                </div>
+                <div class="mission-item">
+                    <div class="mission-icon">
+                        <i class="fas fa-hand-holding-heart"></i>
+                    </div>
+                    <h3>Nuestros Valores</h3>
+                    <ul class="values-list">
+                        <li><i class="fas fa-check"></i> Respeto</li>
+                        <li><i class="fas fa-check"></i> Honradez</li>
+                        <li><i class="fas fa-check"></i> Lealtad</li>
+                        <li><i class="fas fa-check"></i> Compromiso</li>
+                        <li><i class="fas fa-check"></i> Humildad</li>
+                        <li><i class="fas fa-check"></i> Igualdad</li>
+                        <li><i class="fas fa-check"></i> Equidad</li>
+                        <li><i class="fas fa-check"></i> Respeto al trabajo</li>
+                        <li><i class="fas fa-check"></i> Confidencialidad</li>
+                        <li><i class="fas fa-check"></i> Honestidad</li>
+                        <li><i class="fas fa-check"></i> Templanza</li>
+                        <li><i class="fas fa-check"></i> Fortaleza</li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -251,6 +394,8 @@
                                 <option value="membresia">Información sobre membresías</option>
                                 <option value="emergencia">Servicio de emergencia</option>
                                 <option value="empresa">Servicios empresariales</option>
+                                <option value="consulta">Consulta médica</option>
+                                <option value="enfermeria">Servicios de enfermería</option>
                                 <option value="otro">Otro</option>
                             </select>
                         </div>
@@ -286,7 +431,9 @@
                         <li><a href="#inicio">Inicio</a></li>
                         <li><a href="#quienes-somos">Quiénes Somos</a></li>
                         <li><a href="#servicios">Nuestros Servicios</a></li>
+                        <li><a href="#consulta-medica">Consulta Médica</a></li>
                         <li><a href="#membresias">Membresías</a></li>
+                        <li><a href="#mision-vision">Misión y Visión</a></li>
                         <li><a href="#contacto">Contáctanos</a></li>
                     </ul>
                 </div>
@@ -296,6 +443,27 @@
             </div>
         </div>
     </footer>
+
+    <!-- Modal para información de doctores -->
+    <div id="doctor-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-header">
+                <img src="Assets/Graphics/ICON.png" alt="Critical Care Support Logo" class="modal-logo">
+                <h2>Información del Profesional</h2>
+            </div>
+            <div class="modal-body">
+                <div class="doctor-modal-image">
+                    <img id="modal-doctor-img" src="" alt="Doctor">
+                </div>
+                <div class="doctor-modal-info">
+                    <h3 id="modal-doctor-name"></h3>
+                    <p id="modal-doctor-specialty" class="specialty"></p>
+                    <div id="modal-doctor-details" class="doctor-details"></div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="JS/script.js"></script>
 </body>
