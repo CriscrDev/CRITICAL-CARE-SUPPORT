@@ -1,4 +1,4 @@
-// js/script.js - Versión Corregida (sin cambios)
+// js/script.js - Versión Corregida
 
 // Slideshow functionality mejorada
 let slideIndex = 1;
@@ -151,7 +151,7 @@ const doctorsInfo = {
         name: "Dr. Diego Alejandro Parra Hernández",
         specialty: "Urgenciólogo",
         image: "Assets/Graphics/Dr. Diego Parra.jpeg",
-        details: "Especialista en urgencias médicas con amplia experiencia en atención prehospitalaria. Formado en las mejores instituciones médicas del país, el Dr. Parra cuenta con certificaciones en manejo avanzado de trauma y soporte vital avanzado.",
+        details: "Especialista en urgencias médicas con amplia experiencia en atención prehospitalaria. Formado en las mejores instituciones médicas del país, el Dr. Parra cuenta con certificaciones en manejo avanzado de trauma y soporte vital avanzado. Certificado por el Consejo Mexicano de Medicina de Urgencias y con certificaciones internacionales en el manejo de paciente críticos.",
         showLogos: true,
         showConsejoLogo: true,
         fullImage: true
@@ -160,7 +160,7 @@ const doctorsInfo = {
         name: "Dra. Gabriela Morales Corral",
         specialty: "Urgencióloga",
         image: "Assets/Graphics/Dr.Gabriela.jpeg",
-        details: "Especialista en urgencias médicas con enfoque en atención pediátrica y geriátrica. La Dra. Morales ha participado en numerosos programas de capacitación en medicina de emergencia y cuenta con amplia experiencia en manejo de crisis.",
+        details: "Especialista en urgencias médicas con amplia experiencia en atención prehospitalaria. La Dra. Morales ha participado en numerosos programas de capacitación en medicina de emergencia y cuenta con amplia experiencia en manejo de crisis. Certificada por el Consejo Mexicano de Medicina de Urgencias y con certificaciones internacionales en el manejo de paciente críticos.",
         showLogos: true,
         showConsejoLogo: true,
         fullImage: true
@@ -169,7 +169,7 @@ const doctorsInfo = {
         name: "Dra. Carmen Martínez Martínez",
         specialty: "Medicina Crítica",
         image: "Assets/Graphics/Dr.Carmen.jpeg",
-        details: "Especialista en medicina crítica y cuidados intensivos. La Dra. Martínez cuenta con amplia experiencia en unidades de terapia intensiva y manejo de pacientes en estado crítico. Certificada en ventilación mecánica y monitorización hemodinámica.",
+        details: "Especialista en medicina crítica y cuidados intensivos. La Dra. Martínez cuenta con amplia experiencia en unidades de terapia intensiva y manejo de pacientes en estado crítico. Certificada en ventilación mecánica y monitorización hemodinámica. Certificada por el Consejo Mexicano de Medicina de Urgencias y con certificaciones internacionales en el manejo de paciente críticos.",
         showLogos: true,
         showMedicinaCLogo: true,
         fullImage: true
@@ -177,10 +177,19 @@ const doctorsInfo = {
     4: {
         name: "Dra. Victoria Adriana Díaz Juárez",
         specialty: "Medicina Crítica",
-        image: "Assets/Graphics/Dr.Victoria.jpeg",
-        details: "Especialista en medicina crítica con subespecialidad en neurocrítica. La Dra. Díaz ha liderado equipos de respuesta rápida en situaciones de emergencia complejas y cuenta con certificaciones internacionales en soporte vital avanzado.",
+        image: "Assets/Graphics/Dr.Viky.jpeg",
+        details: "Especialista en medicina crítica con subespecialidad en neurocrítica. La Dra. Díaz ha liderado equipos de respuesta rápida en situaciones de emergencia complejas y cuenta con certificaciones internacionales en soporte vital avanzado. Certificada por el Consejo Mexicano de Medicina de Urgencias y con certificaciones internacionales en el manejo de paciente críticos.",
         showLogos: true,
         showMedicinaCLogo: true,
+        fullImage: true 
+    },
+    5: {
+        name: "Enf. Sergio E. Martinez",
+        specialty: "Tecnico En Emergencias Medicas - Avanzado",
+        image: "Assets/Graphics/TEM. Winnie.png",
+        details: "Técnico en Urgencias Médicas especializado en atención prehospitalaria. Cuenta con certificaciones internacionales PHTLS, PALS, AMLS, ACLS y BLS para el manejo avanzado de trauma y soporte vital. Certificado por el Consejo Mexicano de Medicina de Urgencias y con certificaciones internacionales en el manejo de paciente críticos.",
+        showLogos: true,
+        showTEMLogo: true,
         fullImage: true 
     }
 };
@@ -230,6 +239,18 @@ doctorCards.forEach(card => {
                     consejoLogo.className = 'consejo-logo';
                     logosContainer.appendChild(consejoLogo);
                 }
+
+                // Logo TEM - AMBOS LOGOS
+                if (doctor.showTEMLogo) {
+                    // Primer logo - TEM AVANZADO
+                    const TEMLogo = document.createElement('img');
+                    TEMLogo.src = 'Assets/Graphics/TEM AVANZADO.PNG';
+                    TEMLogo.alt = 'TEM - A';
+                    TEMLogo.className = 'TEM';
+                    logosContainer.appendChild(TEMLogo);
+                    
+                  
+                }
                 
                 modalHeader.appendChild(logosContainer);
                 
@@ -242,7 +263,7 @@ doctorCards.forEach(card => {
                 modalHeader.classList.add('with-logos');
                 
                 // Si solo hay un logo, agregar clase para centrado individual
-                if (!doctor.showConsejoLogo && !doctor.showMedicinaCLogo) {
+                if (!doctor.showConsejoLogo && !doctor.showMedicinaCLogo && !doctor.showTEMLogo) {
                     modalHeader.classList.add('single-logo');
                 }
             }
