@@ -244,7 +244,7 @@ doctorCards.forEach(card => {
                 if (doctor.showTEMLogo) {
                     // Primer logo - TEM AVANZADO
                     const TEMLogo = document.createElement('img');
-                    TEMLogo.src = 'Assets/Graphics/TEM AVANZADO.PNG';
+                    TEMLogo.src = 'Assets/Graphics/TEM.png';
                     TEMLogo.alt = 'TEM - A';
                     TEMLogo.className = 'TEM';
                     logosContainer.appendChild(TEMLogo);
