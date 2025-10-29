@@ -187,7 +187,7 @@ const doctorsInfo = {
         name: "Enf. Sergio E. Martinez",
         specialty: "Tecnico En Emergencias Medicas - Avanzado",
         image: "Assets/Graphics/TEM. Winnie.png",
-        details: "Técnico en Urgencias Médicas especializado en atención prehospitalaria. Cuenta con certificaciones internacionales PHTLS, PALS, AMLS, ACLS y BLS para el manejo avanzado de trauma y soporte vital. Certificado por el Consejo Mexicano de Medicina de Urgencias y con certificaciones internacionales en el manejo de paciente críticos.",
+        details: "Técnico en Urgencias Médicas especializado en atención prehospitalaria. Certificado en PHTLS, PALS, AMLS, ACLS y BLS para manejo avanzado de trauma y soporte vital. Destacado en evaluación de pacientes, manejo de vía aérea, administración de medicamentos de emergencia y estabilización de trauma. Reconocido por su liderazgo en situaciones de alto estrés y coordinación de equipos en emergencias.",
         showLogos: true,
         showTEMLogo: true,
         fullImage: true 
